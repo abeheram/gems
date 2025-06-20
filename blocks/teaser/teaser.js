@@ -43,9 +43,9 @@ export default function decorate(block) {
 
   // Process each paragraph and mark it as text or terms-and-conditions
   block.querySelectorAll('p').forEach((p) => {
-    const innerHTML = p.innerHTML?.trim();
-    p.innerHTML(innerHTML);
-    if (innerHTML?.startsWith('Terms and conditions:')) {
+    //const innerHTML = p.innerHTML?.trim();
+    //p.innerHTML(innerHTML);
+    if (p.innerHTML?.startsWith('Terms and conditions:')) {
       p.classList.add('terms-and-conditions');
     }
   });
