@@ -9,6 +9,7 @@
               "template": {
                 "name": "Teaser",
                 "model": "teaser",
+                "classes": "side-by-side",
                 "textContent_text": "<h2>Enter a title</h2><p>...and body text here!</p>",
                 "textContent_cta": "/",
                 "textContent_ctaText": "Click me!"
@@ -21,6 +22,24 @@
         {
             "id": "teaser",
             "fields": [
+               {
+                    "component": "select",
+                    "name": "classes",
+                    "value": "",
+                    "label": "Teaser options",
+                    "description": "",
+                    "valueType": "string",
+                    "options": [
+                        {
+                            "name": "Default",
+                            "value": ""
+                        },
+                        {
+                            "name": "Side-by-side",
+                            "value": "side-by-side"
+                        }
+                    ]
+                },
                 {
                     "component": "reference",
                     "valueType": "string",
