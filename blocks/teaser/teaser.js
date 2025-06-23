@@ -41,11 +41,13 @@ export default function decorate(block) {
   block.querySelector('h1,h2,h3,h4,h5,h6').classList.add('title');
   block.querySelector('img').classList.add('image');
 
-  // Process each paragraph and mark it as text or terms-and-conditions
+ // Process each paragraph and mark it as text or terms-and-conditions
   block.querySelectorAll('p').forEach((p) => {
-    //const innerHTML = p.innerHTML?.trim();
-    //p.innerHTML(innerHTML);
-    if (p.innerHTML?.startsWith('Terms and conditions:')) {
+    const innerHTML = p.innerHTML?.trim();
+
+    // If the paragraph starts with Terms and conditions: then style it as such
+    if (innerHTML?.startsWith("Terms and conditions:")) {
+      /* If a paragraph starts with '*', add a special CSS class. */
       p.classList.add('terms-and-conditions');
     }
   });
