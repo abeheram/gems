@@ -282,5 +282,76 @@
         "valueType": "string"
       }
     ]
+  },
+  {
+    "id": "test",
+    "fields": [
+      {
+        "component": "aem-content",
+        "name": "reference",
+        "value": "",
+        "label": "AEM Content Picker",
+        "valueType": "string",
+        "validation": {
+          "rootPath": "/content"
+        }
+      },
+      {
+        "component": "aem-tag",
+        "label": "AEM Tag Picker",
+        "name": "cq:tags",
+        "valueType": "string"
+      },
+      {
+        "component": "boolean",
+        "label": "Boolean",
+        "name": "boolean",
+        "valueType": "boolean"
+      },
+      {
+        "component": "checkbox-group",
+        "label": "Checkbox Group",
+        "name": "checkbox",
+        "valueType": "string[]",
+        "options": [
+          {
+            "name": "Option 1",
+            "value": "option1"
+          },
+          {
+            "name": "Option 2",
+            "value": "option2"
+          }
+        ]
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string"
+      },
+      {
+        "component": "container",
+        "label": "Container",
+        "name": "container",
+        "valueType": "string",
+        "collapsible": true,
+        "fields": [
+          {
+            "component": "text-input",
+            "label": "Simple Text 1",
+            "name": "text",
+            "valueType": "string"
+          },
+          {
+            "component": "text-input",
+            "label": "Simple Text 2",
+            "name": "text2",
+            "valueType": "string"
+          }
+        ]
+      }
+    ]
   }
 ]
