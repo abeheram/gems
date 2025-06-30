@@ -293,7 +293,7 @@
         "label": "AEM Content Picker",
         "valueType": "string",
         "validation": {
-          "rootPath": "/content"
+          "rootPath": "/content/aem-boilerplate/us/en/adventures"
         }
       },
       {
