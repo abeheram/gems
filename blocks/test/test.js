@@ -9,6 +9,5 @@ export default function decorate(block) {
       divs[1].querySelector("p.button-container")
     ) {
       const firstDivParagraph = divs[0].querySelector("p")?.textContent || "";
-      console.log(firstDivParagraph);
     }
 }
