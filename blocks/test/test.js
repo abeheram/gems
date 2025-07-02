@@ -1,6 +1,6 @@
 export default function decorate(block) {
   /* change h1 and link to header with link*/
-  const testBlock = document.querySelector(".test.block");
+const testBlock = block.querySelector(".test.block");
   if (testBlock) {
     const divs = testBlock.querySelectorAll("div");
     if (
@@ -12,14 +12,14 @@ export default function decorate(block) {
       const secondDivLink = divs[1].querySelector("a");
       if (secondDivLink) {
         // Create the new div
-        const newDiv = document.createElement("div");
+        const newDiv = block.createElement("div");
         newDiv.className = "test-header-with-link";
 
         // Create the <h1> element
-        const h1 = document.createElement("h1");
+        const h1 = block.createElement("h1");
 
         // Create the <a> element and set its attributes
-        const link = document.createElement("a");
+        const link = block.createElement("a");
         link.href = secondDivLink.href; // Use the href from the second div's <a>
         link.textContent = firstDivParagraph; // Set the text from the first div's <p>
 
