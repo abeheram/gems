@@ -287,10 +287,17 @@
     "id": "test",
     "fields": [
       {
+        "component": "text",
+        "valueType": "string",
+        "name": "heading",
+        "label": "Heading",
+        "required": true
+      },
+      {
         "component": "aem-content",
-        "name": "reference",
+        "name": "headinglink",
         "value": "",
-        "label": "AEM Content Picker",
+        "label": "Heading Link",
         "valueType": "string",
         "validation": {
           "rootPath": "/content/aem-boilerplate/us/en/adventures"
@@ -326,9 +333,9 @@
       },
       {
         "component": "richtext",
-        "name": "text",
+        "name": "byline",
         "value": "",
-        "label": "Text",
+        "label": "Byline",
         "valueType": "string"
       },
       {
