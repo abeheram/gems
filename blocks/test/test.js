@@ -31,7 +31,7 @@ export default function decorate(block) {
         newDiv.appendChild(h1);
 
         // Replace the first two divs with the new div
-        block.replaceChild(newDiv, divs[1]);
+        block.replaceChild(newDiv, divs[2]);
         block.replaceChild(newDiv, divs[0]);
     }
     }
