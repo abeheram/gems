@@ -10,7 +10,7 @@ export default function decorate(block) {
       divs[2].querySelector("p.button-container")
     ) {
       const firstDivParagraph = divs[0].querySelector("p")?.textContent || "";
-      const secondDivLink = divs[1].querySelector("a");
+      const secondDivLink = divs[2].querySelector("a");
     if (secondDivLink) {
       // Create the new div
         const newDiv = block.createElement("div");
