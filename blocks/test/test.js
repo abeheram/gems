@@ -7,7 +7,7 @@ export default function decorate(block) {
   if (
       divs.length >= 2 &&
       divs[0].querySelector("p") &&
-      divs[1].querySelector("p.button-container")
+      divs[2].querySelector("p.button-container")
     ) {
       const firstDivParagraph = divs[0].querySelector("p")?.textContent || "";
       const secondDivLink = divs[1].querySelector("a");
