@@ -4,4 +4,12 @@
     left: 5%;
     height: 500px;
     overflow: hidden;
+     h2 {
+      color: red;
+      font-size: 30px;
+    }
+    a {
+      color: rgb(0, 187, 255);
+      text-decoration: none;
+    }
 }
