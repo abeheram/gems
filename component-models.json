@@ -286,23 +286,12 @@
   {
     "id": "test",
     "fields": [
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "heading",
-        "label": "Heading",
-        "required": true
-      },
-      {
-        "component": "aem-content",
-        "name": "headinglink",
-        "value": "",
-        "label": "Heading Link",
-        "valueType": "string",
-        "validation": {
-          "rootPath": "/content/aem-boilerplate/us/en/adventures"
-        }
-      },
+     {
+      "component": "richtext",
+      "name": "header link",
+      "label": "Header",
+      "valueType": "string"
+    },
       {
         "component": "aem-tag",
         "label": "AEM Tag Picker",
