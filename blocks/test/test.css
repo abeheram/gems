@@ -4,7 +4,14 @@
     left: 5%;
     height: 500px;
     overflow: hidden;
-     background-color: antiquewhite;
+    background-color: antiquewhite;
+    .headertest {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 100%; /* Optional: Adjust height if needed */
+}
     #demo a {
       color: red;
       font-size: 30px;
