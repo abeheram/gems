@@ -286,12 +286,12 @@
   {
     "id": "test",
     "fields": [
-     {
-      "component": "richtext",
-      "name": "header link",
-      "label": "Header",
-      "valueType": "string"
-    },
+      {
+        "component": "richtext",
+        "name": "header link",
+        "label": "Header",
+        "valueType": "string"
+      },
       {
         "component": "aem-tag",
         "label": "AEM Tag Picker",
@@ -347,6 +347,31 @@
             "valueType": "string"
           }
         ]
+      }
+    ]
+  },
+  {
+    "id": "pageheader",
+    "fields": [
+      {
+        "component": "text-input",
+        "label": "Header",
+        "name": "header",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "leadtext",
+        "value": "",
+        "label": "Lead Test",
+        "valueType": "string"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
       }
     ]
   }
