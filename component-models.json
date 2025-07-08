@@ -288,65 +288,21 @@
     "fields": [
       {
         "component": "richtext",
-        "name": "header link",
-        "label": "Header",
+        "name": "rte",
+        "label": "RTE",
         "valueType": "string"
       },
       {
-        "component": "aem-tag",
-        "label": "AEM Tag Picker",
-        "name": "cq:tags",
+        "component": "text-input",
+        "label": "Test input",
+        "name": "textinput",
         "valueType": "string"
       },
       {
-        "component": "boolean",
-        "label": "Boolean",
-        "name": "boolean",
-        "valueType": "boolean"
-      },
-      {
-        "component": "checkbox-group",
-        "label": "Checkbox Group",
-        "name": "checkbox",
-        "valueType": "string[]",
-        "options": [
-          {
-            "name": "Option 1",
-            "value": "option1"
-          },
-          {
-            "name": "Option 2",
-            "value": "option2"
-          }
-        ]
-      },
-      {
-        "component": "richtext",
-        "name": "byline",
-        "value": "",
-        "label": "Byline",
+        "component": "text",
+        "name": "text",
+        "label": "Simple Text",
         "valueType": "string"
-      },
-      {
-        "component": "container",
-        "label": "Container",
-        "name": "container",
-        "valueType": "string",
-        "collapsible": true,
-        "fields": [
-          {
-            "component": "text-input",
-            "label": "Simple Text 1",
-            "name": "text",
-            "valueType": "string"
-          },
-          {
-            "component": "text-input",
-            "label": "Simple Text 2",
-            "name": "text2",
-            "valueType": "string"
-          }
-        ]
       }
     ]
   },
